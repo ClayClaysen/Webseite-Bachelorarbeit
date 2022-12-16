@@ -1,0 +1,6 @@
+{
+    "projects": [
+        { "name": "Luke", "image": "/images/Aktivitätsmusik.png" },
+        { "name": "Joe", "image": "/images/Aktivitätsmusik.png" }
+    ]
+}
