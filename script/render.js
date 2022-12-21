@@ -20,9 +20,9 @@ function set_data(about_me, projects, project_amount) {
     project_data = projects;
     project_data_length = project_amount;
 
-    console.log(about_me_data);
-    console.log(project_data);
-    console.log(project_data_length);
+    // console.log(about_me_data);
+    // console.log(project_data);
+    // console.log(project_data_length);
 
 }
 
@@ -40,7 +40,6 @@ function renderHome() {
     document.getElementById('about_me-container').innerHTML = rendered_about_me;
 }
 
-
 function renderWork() {
 
     var template = document.getElementById('template').innerHTML;
@@ -48,26 +47,29 @@ function renderWork() {
     document.getElementById('projects-container').innerHTML = rendered;
 }
 
-var projects_old = [{
-        projectname: "Luke",
-        image: "/images/Aktivitätsmusik.png",
-        projectdescription: "Chuck, Chuck, its' your cousin. Your cousin Marvin Berry, you know that new sound you're lookin for, well listen to this. Then how am I supposed to ever meet anybody."
-    },
-    {
-        projectname: "Jaggl",
-        image: "/images/Aktivitätsmusik.png",
-        projectdescription: "Chuck, Chuck, its' your cousin. Your cousin Marvin Berry, you know that new sound you're lookin for, well listen to this. Then how am I supposed to ever meet anybody."
-    },
-    {
-        projectname: "Malik Harris sein  VAdder vadder Vadder",
-        image: "/images/Aktivitätsmusik.png",
-        projectdescription: "Chuck, Chuck, its' your cousin. Your cousin Marvin Berry, you know that new sound you're lookin for, well listen to this. Then how am I supposed to ever meet anybody."
-    },
+function renderDetailPage() {
+    var target_project_name = getUrlParameter();
+    var target_index;
 
-]
+    for (let i = 0; i < project_data_length; i++) {
+        if (project_data[i].target_id == target_project_name) {
+            target_index = i;
+        }
+    }
 
-var about_me_old = {
-    name: "Simon Klostermaier",
-    image: "/images/Aktivitätsmusik.png",
-    about_me_description: "Chuck, Chuck, its' your cousin. Your cousin Marvin Berry, you know that new sound you're lookin for, well listen to this. Then how am I supposed to ever meet anybody."
+    var template_project = document.getElementById('template-project').innerHTML;
+    var rendered_project = Mustache.render(template_project, project_data[target_index]);
+    document.getElementById('project-container').innerHTML = rendered_project;
+
+}
+
+function getUrlParameter() {
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == "project") {
+            return sParameterName[1];
+        }
+    }
 }

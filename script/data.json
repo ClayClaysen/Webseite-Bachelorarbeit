@@ -8,17 +8,24 @@
     "projects": [{
             "project_name": "Luke",
             "image": "/images/Aktivitätsmusik.png",
-            "project_description": "Chuck, Chuck, its' your cousin. Your cousin Marvin Berry, you know that new sound you're lookin for, well listen to this. Then how am I supposed to ever meet anybody."
+            "project_description": "Chuck, Chuck, its' your cousin. Your cousin Marvin Berry, you know that new sound you're lookin for, well listen to this. Then how am I supposed to ever meet anybody.",
+            "project_description_long": "swag",
+            "target_id": "1"
         },
         {
             "project_name": "Jaggl",
             "image": "/images/Aktivitätsmusik.png",
-            "project_description": "Chuck, Chuck, its' your cousin. Your cousin Marvin Berry, you know that new sound you're lookin for, well listen to this. Then how am I supposed to ever meet anybody."
+            "project_description": "Chuck, Chuck, its' your cousin. Your cousin Marvin Berry, you know that new sound you're lookin for, well listen to this. Then how am I supposed to ever meet anybody.",
+            "project_description_long": "swag",
+            "target_id": "2"
+
         },
         {
             "project_name": "Malik Harris",
             "image": "/images/Aktivitätsmusik.png",
-            "project_description": "Chuck, Chuck, its' your cousin. Your cousin Marvin Berry, you know that new sound you're lookin for, well listen to this. Then how am I supposed to ever meet anybody."
+            "project_description": "Chuck, Chuck, its' your cousin. Your cousin Marvin Berry, you know that new sound you're lookin for, well listen to this. Then how am I supposed to ever meet anybody.",
+            "project_description_long": "swag",
+            "target_id": "Test"
         }
 
     ]
