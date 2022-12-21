@@ -8,13 +8,13 @@
 
 </head>
 
-<body onload="renderContent()">
+<body onload="renderHome()">
 
     <div class="navigation">
         <ul>
             <li>
                 <a href="home.html">
-                    <h2 class="navitem">home</h2>
+                    <h2 class="navitem active">home</h2>
                 </a>
             </li>
             <li>
@@ -34,8 +34,8 @@
         <h1>hier spielt das Showreel</h1>
     </div>
 
-    <!--template-->
-    <script id="template" type="x-tmpl-mustache">
+    <!--template for latest project-->
+    <script id="template-project" type="x-tmpl-mustache">
         {{#.}}
         <div class="row">
             <div class="col-sm-1"></div>
@@ -44,9 +44,10 @@
             </div>
             <div class="col-sm-1 space"></div>
             <div class="content col-sm-5 project-text">
-                <h2 class="projectname">{{projectname}}</h2>
-                <span>{{projectdescription}}</span>
-                <div class="buttons"> <button type="button" class="btn btn-primary">Primary</button>
+                <h2 class="projectname">{{project_name}}</h2>
+                <span>{{project_description}}</span>
+                <div class="buttons">
+                    <button type="button" class="btn btn-primary">Primary</button>
                     <button type="button" class="btn btn-secondary">Secondary</button>
                 </div>
             </div>
@@ -57,7 +58,7 @@
     </script>
 
 
-    <!--Content-->
+    <!--target for latest project-->
     <div class=" my-latest-project fluid-container">
         <h1> my latest project</h1>
         <div id="projects-container">
@@ -66,8 +67,34 @@
     </div>
 
 
-    <div class="about-me fluid-container ">
+    <!--template for about me-->
+    <script id="template-about_me" type="x-tmpl-mustache">
+
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="content col-sm-4 image">
+                <img src="{{image}}" id="image" />
+            </div>
+            <div class="col-sm-1 space"></div>
+            <div class="content col-sm-5 project-text">
+                <h2 class="about_me_name">{{name}}</h2>
+                <span>{{about_me_description}}</span>
+                <div class="buttons">
+                    <button type="button" class="btn btn-primary">Primary</button>
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+
+    </script>
+
+    <!--target for latest project-->
+    <div class="about-me fluid-container">
         <h1>get to know me</h1>
+        <div id="about_me-container">
+            Loading...
+        </div>
     </div>
 
     <div class="Footer fluid-container ">

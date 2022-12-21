@@ -28,11 +28,11 @@
     h1 {
         text-align: center;
         font-size: 48px;
-        margin-top: 50px;
-        margin-bottom: 70px;
+        /* margin-top: 50px; */
+        padding-bottom: 40px;
     }
     
-    h2:not(.projectname) {
+    h2:not(.projectname):not(.about_me_name) {
         font-size: 32px;
         margin-bottom: 20px;
         display: inline-block;
@@ -42,6 +42,11 @@
     .navigation {
         text-align: center;
         margin-top: 40px;
+    }
+    
+    .active {
+        text-decoration: underline;
+        transform: scale(1.2);
     }
     
     ul {
@@ -69,10 +74,12 @@
     .fluid-container:not(.Showreel) {
         border-top-style: solid;
         border-width: 3px;
+        padding-bottom: 140px;
+        padding-top: 60px;
     }
     
     #projects-container {
-        margin-bottom: 150px;
+        /* margin-bottom: 150px; */
     }
     
     #image {
