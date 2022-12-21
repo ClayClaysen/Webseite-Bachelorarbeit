@@ -1,6 +1,6 @@
-let project_data;
-let about_me_data;
-let project_data_length;
+var project_data;
+var about_me_data;
+var project_data_length;
 
 
 fetch('/script/data.json')
@@ -33,7 +33,7 @@ function renderHome() {
     var template_project = document.getElementById('template-project').innerHTML;
     var template_about_me = document.getElementById('template-about_me').innerHTML;
 
-    var rendered_project = Mustache.render(template_project, project_data[0]);
+    var rendered_project = Mustache.render(template_project, project_data[project_data_length - 1]);
     var rendered_about_me = Mustache.render(template_about_me, about_me_data);
 
     document.getElementById('projects-container').innerHTML = rendered_project;
