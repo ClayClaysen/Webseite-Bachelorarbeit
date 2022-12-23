@@ -1,6 +1,7 @@
 var project_data;
 var about_me_data;
 var project_data_length;
+var button;
 
 
 fetch('/script/data.json')
@@ -11,24 +12,26 @@ fetch('/script/data.json')
         // console.log(json.projects)
         // console.log(json.projects.length)
 
-        set_data(json.about_me, json.projects, json.projects.length)
+        about_me_data = json.about_me;
+        project_data = json.projects;
+        project_data_length = json.projects.length
+            // set_data(json.about_me, json.projects, json.projects.length)
     });
 
 
-function set_data(about_me, projects, project_amount) {
-    about_me_data = about_me;
-    project_data = projects;
-    project_data_length = project_amount;
+// function set_data(about_me, projects, project_amount) {
+//     about_me_data = about_me;
+//     project_data = projects;
+//     project_data_length = project_amount;
 
-    // console.log(about_me_data);
-    // console.log(project_data);
-    // console.log(project_data_length);
+//     // console.log(about_me_data);
+//     // console.log(project_data);
+//     // console.log(project_data_length);
 
-}
+// }
 
 
 function renderHome() {
-
 
     var template_project = document.getElementById('template-project').innerHTML;
     var template_about_me = document.getElementById('template-about_me').innerHTML;
@@ -73,3 +76,22 @@ function getUrlParameter() {
         }
     }
 }
+
+
+document.addEventListener("click", function(evnt) {
+    var menu = document.getElementById("menu");
+    try {
+        button = document.getElementById(evnt.target.id);
+        console.log(button.id);
+        if (menu.classList.contains("is_active") && button.id == "burger-menu-toggle") {
+            button.setAttribute('aria-expanded', 'false');
+            menu.classList.remove('is_active');
+        } else {
+            menu.classList.add('is_active');
+            button.setAttribute('aria-expanded', 'true');
+        }
+
+    } catch (e) {
+        console.log("no id found");
+    }
+})
