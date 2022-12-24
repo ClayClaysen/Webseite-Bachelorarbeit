@@ -183,7 +183,7 @@ h2:not(.projectname):not(.about_me_name) {
         position: absolute;
         width: 100%;
     }
-    /* Navigation CSS */
+    /* Header Navigation CSS */
     .navbar {
         padding-left: 1.2rem;
     }
@@ -245,6 +245,25 @@ h2:not(.projectname):not(.about_me_name) {
         margin-top: auto;
         margin-bottom: auto;
         padding-left: 0rem;
+    }
+    /* Footer CSS */
+    .footer {
+        width: 100%;
+    }
+    .footer.row {
+        text-align: center;
+        position: relative;
+        display: inline-block;
+        left: 50%;
+    }
+    .footer-text {
+        border: 3px solid #73AD21;
+    }
+    .footer-cta {
+        border: 3px solid #73AD21;
+        display: flex;
+        gap: 2vw;
+        justify-content: right;
     }
 }
 

@@ -19,18 +19,6 @@ fetch('/script/data.json')
     });
 
 
-// function set_data(about_me, projects, project_amount) {
-//     about_me_data = about_me;
-//     project_data = projects;
-//     project_data_length = project_amount;
-
-//     // console.log(about_me_data);
-//     // console.log(project_data);
-//     // console.log(project_data_length);
-
-// }
-
-
 function renderHome() {
 
     var template_project = document.getElementById('template-project').innerHTML;
@@ -83,12 +71,15 @@ document.addEventListener("click", function(evnt) {
     try {
         button = document.getElementById(evnt.target.id);
         console.log(button.id);
-        if (menu.classList.contains("is_active") && button.id == "burger-menu-toggle") {
-            button.setAttribute('aria-expanded', 'false');
-            menu.classList.remove('is_active');
-        } else {
-            menu.classList.add('is_active');
-            button.setAttribute('aria-expanded', 'true');
+        if (button.id == "burger-menu-toggle") {
+            if (menu.classList.contains("is_active")) {
+                button.setAttribute('aria-expanded', 'false');
+                menu.classList.remove('is_active');
+            } else {
+                menu.classList.add('is_active');
+                button.setAttribute('aria-expanded', 'true');
+                console.log("expand");
+            }
         }
 
     } catch (e) {
