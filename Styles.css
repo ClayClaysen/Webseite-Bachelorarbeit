@@ -179,16 +179,22 @@ h2:not(.projectname):not(.about_me_name) {
         font-size: 4.16rem;
         margin-bottom: 2.6rem;
     }
+    header {
+        position: absolute;
+        width: 100%;
+    }
     /* Navigation CSS */
     .navbar {
         padding-left: 1.2rem;
     }
     .nav {
-        margin: auto;
         overflow: hidden;
         display: inline-block;
         list-style-type: none;
         text-align: center;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
     }
     .nav li {
         display: inline-block;
@@ -209,6 +215,36 @@ h2:not(.projectname):not(.about_me_name) {
     }
     .burger-menu-toggle {
         display: none;
+    }
+    /* Showreel */
+    .showreel {
+        height: 100vh;
+    }
+    .showreel img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    /* Template CSS */
+    .fluid-container:not(.showreel) {
+        border-top-style: solid;
+        border-width: 0.3rem;
+        padding-bottom: 14rem;
+        padding-top: 6rem;
+    }
+    #image {
+        height: 60vh;
+    }
+    .buttons {
+        margin-top: 1rem;
+    }
+    .btn {
+        font-size: 1.9rem;
+    }
+    .project-text {
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-left: 0rem;
     }
 }
 
@@ -256,34 +292,6 @@ h2:not(.projectname):not(.about_me_name) {
     .burger-menu-toggle {
         display: none;
     }
-}
-
-
-/* Template CSS */
-
-.fluid-container:not(.Showreel) {
-    border-top-style: solid;
-    border-width: 0.3rem;
-    padding-bottom: 14rem;
-    padding-top: 6rem;
-}
-
-#image {
-    height: 60vh;
-}
-
-.buttons {
-    margin-top: 1rem;
-}
-
-.btn {
-    font-size: 1.9rem;
-}
-
-.project-text {
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-left: 0rem;
 }
 
 
