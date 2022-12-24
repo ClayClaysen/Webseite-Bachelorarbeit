@@ -70,7 +70,7 @@ document.addEventListener("click", function(evnt) {
     var menu = document.getElementById("menu");
     try {
         button = document.getElementById(evnt.target.id);
-        console.log(button.id);
+        // console.log(button.id);
         if (button.id == "burger-menu-toggle") {
             if (menu.classList.contains("is_active")) {
                 button.setAttribute('aria-expanded', 'false');
@@ -78,11 +78,11 @@ document.addEventListener("click", function(evnt) {
             } else {
                 menu.classList.add('is_active');
                 button.setAttribute('aria-expanded', 'true');
-                console.log("expand");
+                // console.log("expand");
             }
         }
 
     } catch (e) {
-        console.log("no id found");
+        // console.log("no id found");
     }
 })
