@@ -65,6 +65,8 @@ function getUrlParameter() {
     }
 }
 
+// searchParams aus URL object
+
 
 document.addEventListener("click", function(evnt) {
     var menu = document.getElementById("menu");

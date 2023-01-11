@@ -50,6 +50,24 @@
     <!--template for latest project-->
     <script id="template-project" type="x-tmpl-mustache">
 
+        <div class="grid-test">
+            <div class="content content-test project-image">
+                <img src="{{image}}" id="image" />
+            </div>
+            <div class="content content-test project-text">
+                <h2 class="projectname">{{project_name}}</h2>
+                <span>{{project_description}}</span>
+                <div class="buttons">
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-secondary">Secondary</button>
+                </div>
+            </div>
+        </div>
+
+    </script>
+
+    <!-- <script id="template-project" type="x-tmpl-mustache">
+
         <div class="row">
             <div class="col-sm-1"></div>
             <div class="content col-sm-4 image">
@@ -67,7 +85,8 @@
             <div class="col-sm-1"></div>
         </div>
 
-    </script>
+    </script> -->
+
 
 
     <!--target for latest project-->
@@ -102,12 +121,14 @@
     </script>
 
     <!--target for latest project-->
-    <div class="about-me fluid-container">
+    <!-- <div class="about-me fluid-container">
         <h1>get to know me</h1>
         <div id="about_me-container">
             Loading...
         </div>
-    </div>
+    </div> -->
+
+
 
 </body>
 

@@ -10,7 +10,6 @@
 html {
     font-size: 62.5%;
     padding: 0;
-    overflow-x: hidden;
 }
 
 
@@ -33,6 +32,13 @@ h2:not(.projectname):not(.about_me_name) {
     border-radius: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
+    font-size: 1.9rem;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 1rem;
+    gap: 1rem;
 }
 
 
@@ -47,9 +53,9 @@ h2:not(.projectname):not(.about_me_name) {
         color: black;
         background: white;
         border: solid black;
-        border-radius: 25%;
     }
-    .btn-primary:hover {
+    .btn-primary:hover,
+    .btn-secondary:hover {
         color: inherit;
         background: inherit;
         border: solid white;
@@ -57,6 +63,7 @@ h2:not(.projectname):not(.about_me_name) {
     .btn-secondary {
         color: white;
         background: black;
+        border: solid black;
     }
 }
 
@@ -84,309 +91,180 @@ h2:not(.projectname):not(.about_me_name) {
 }
 
 
-/* Extra small devices (phones, 600px and down) */
-
-@media only screen and (max-width: 60rem) {
-    h1 {
-        text-align: center;
-        font-size: 3rem;
-        padding-bottom: 4rem;
-    }
-    h2 {
-        font-size: 1.89rem;
-        margin-bottom: 1.18px;
-    }
-    /* Navigation CSS */
-    .burger-menu-toggle {
-        position: absolute;
-        right: 1rem;
-        top: 1rem;
-        padding: 1rem;
-        border: 0.2rem solid #fff;
-        border-radius: 0.5rem;
-        font-size: 1.5rem;
-        background: transparent;
-        color: inherit;
-        z-index: 3;
-    }
-    .nav {
-        overflow: hidden;
-        display: none;
-        list-style-type: none;
-        text-align: center;
-    }
-    .nav.is_active {
-        width: 100%;
-        display: block;
-        position: absolute;
-        top: 0rem;
-        padding: 3rem;
-        background: black;
-        z-index: 2;
-    }
-    .nav li {
-        display: block;
-    }
-    .nav li a {
-        text-decoration: none;
-        color: inherit !important;
-        font-size: 3.2rem;
-        font-weight: bold;
-    }
-    .nav li .active {
-        text-decoration: underline;
-        transform: scale(1.3);
-    }
-    .nav li a:hover {
-        transform: scale(1.3)
-    }
-}
-
-
-/* Medium devices (landscape tablets, 600px and up) */
-
-@media only screen and (min-width: 60rem) {
-    h1 {
-        text-align: center;
-        font-size: 5.07rem;
-        padding-bottom: 6.76rem;
-    }
-    h2 {
-        font-size: 3.2rem;
-        margin-bottom: 2rem;
-    }
-    span {
-        font-size: 1.9rem;
-    }
-    /* Navigation CSS */
-    .burger-menu-toggle {
-        position: absolute;
-        right: 1rem;
-        top: 1rem;
-        padding: 1rem;
-        border: 0.2rem solid #fff;
-        border-radius: 0.5rem;
-        font-size: 1.5rem;
-        background: transparent;
-        color: inherit;
-        z-index: 3;
-    }
-    .nav {
-        overflow: hidden;
-        display: none;
-        list-style-type: none;
-        text-align: center;
-    }
-    .nav.is_active {
-        width: 100%;
-        display: block;
-        position: absolute;
-        top: 0rem;
-        padding: 3rem;
-        background: black;
-        z-index: 2;
-    }
-    .nav li {
-        display: block;
-    }
-    .nav li a {
-        text-decoration: none;
-        color: inherit !important;
-        font-size: 3.2rem;
-        font-weight: bold;
-    }
-    .nav li .active {
-        text-decoration: underline;
-        transform: scale(1.3);
-    }
-    .nav li a:hover {
-        transform: scale(1.3)
-    }
-}
-
-
 /* Large devices (laptops/desktops, 700px and up) */
 
 
 /* MACBOOK IS HERE, factor is 1.3*/
 
-@media only screen and (min-width: 70rem) {
-    h1 {
-        text-align: center;
-        font-size: 6.95rem;
-        padding-bottom: 8.78rem;
-    }
-    h2 {
-        font-size: 4.16rem;
-        margin-bottom: 2.6rem;
-    }
-    header {
-        position: absolute;
-        width: 100%;
-    }
-    /* Header Navigation CSS */
-    .navbar {
-        padding-left: 1.2rem;
-    }
-    .nav {
-        overflow: hidden;
-        display: inline-block;
-        list-style-type: none;
-        text-align: center;
-        position: relative;
-        width: 100%;
-    }
-    .nav li {
-        display: inline-block;
-        padding: 2rem;
-    }
-    .nav li a {
-        text-decoration: none;
-        color: inherit !important;
-        font-size: 3.2rem;
-        font-weight: bold;
-    }
-    .nav li .active {
-        text-decoration: underline;
-        transform: scale(1.3);
-    }
-    .nav li a:hover {
-        transform: scale(1.3)
-    }
-    .burger-menu-toggle {
-        display: none;
-    }
-    /* Showreel */
-    .showreel {
-        height: 100vh;
-    }
-    .showreel img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        margin: 0 auto;
-    }
-    /* Template CSS */
-    .fluid-container:not(.showreel):not(footer) {
-        border-top-style: solid;
-        border-width: 0.3rem;
-        padding-bottom: 14rem;
-        padding-top: 6rem;
-    }
-    #image {
-        height: 60vh;
-    }
-    .buttons {
-        display: flex;
-        margin-top: 1rem;
-        gap: 1rem;
-    }
-    .btn {
-        font-size: 1.9rem;
-    }
-    .project-text {
-        margin-top: auto;
-        margin-bottom: auto;
-        padding-left: 0rem;
-    }
-    /* Footer CSS */
-    footer {
-        padding-bottom: 0vh;
-        border-top-style: solid;
-        border-width: 0.3rem;
-        padding-top: 6rem;
-    }
-    footer h1 {
-        padding-bottom: 4.39rem;
-    }
-    .footer.row {
-        text-align: center;
-        position: relative;
-        display: inline-block;
-        left: 50%;
-    }
-    .footer-cta {
-        display: flex;
-        gap: 2vw;
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-    .footer-cta a {
-        text-decoration: none;
-        color: inherit;
-    }
-    /* Footer nav */
-    .footer-nav {
-        list-style-type: none;
-        text-align: center;
-        position: relative;
-        overflow: hidden;
-        display: inline-block;
-        width: 100%;
-    }
-    .footer-nav li {
-        display: inline-block;
-        padding: 2rem;
-    }
-    .footer-nav li a {
-        text-decoration: none;
-        color: inherit !important;
-        font-size: 3.2rem;
-        font-weight: bold;
-    }
-    .footer-nav li .active {
-        text-decoration: underline;
-        transform: scale(1.3);
-    }
-    .footer-nav li a:hover {
-        transform: scale(1.3)
-    }
+h1 {
+    text-align: center;
+    font-size: 6.95rem;
+    padding-bottom: 8.78rem;
+}
+
+h2 {
+    font-size: 4.16rem;
+    margin-bottom: 2.6rem;
+}
+
+header {
+    position: absolute;
+    width: 100%;
 }
 
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Header Navigation CSS */
 
-@media only screen and (min-width: 120rem) {
-    h1 {
-        text-align: center;
-        font-size: 8.57rem;
-        padding-bottom: 11.42rem;
-    }
-    h2 {
-        font-size: 5.4rem;
-        margin-bottom: 3.38;
-    }
-    /* Navigation CSS */
-    .navbar {
-        padding-left: 1.2rem;
-    }
-    .nav {
-        margin: auto;
-        overflow: hidden;
-        display: inline-block;
-        list-style-type: none;
-        text-align: center;
-    }
-    .nav li {
-        display: inline-block;
-        padding: 2rem;
-    }
-    .nav li a {
-        text-decoration: none;
-        color: inherit !important;
-        font-size: 3.2rem;
-        font-weight: bold;
-    }
-    .nav li .active {
-        text-decoration: underline;
-        transform: scale(1.3);
-    }
-    .nav li a:hover {
-        transform: scale(1.3)
-    }
-    .burger-menu-toggle {
-        display: none;
-    }
+.navbar {
+    padding-left: 1.2rem;
+}
+
+.nav {
+    overflow: hidden;
+    display: inline-block;
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.nav li {
+    display: inline-block;
+    padding: 2rem;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: inherit !important;
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+.nav li .active {
+    text-decoration: underline;
+    transform: scale(1.3);
+}
+
+.nav li a:hover {
+    transform: scale(1.3)
+}
+
+.burger-menu-toggle {
+    display: none;
+}
+
+
+/* Showreel */
+
+.showreel {
+    height: 100vh;
+}
+
+.showreel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+
+/* Template CSS */
+
+.fluid-container:not(.showreel):not(footer) {
+    border-top-style: solid;
+    border-width: 0.3rem;
+    padding-bottom: 14rem;
+    padding-top: 6rem;
+}
+
+.grid-test {
+    display: grid;
+    align-content: start;
+    grid-template-columns: repeat(auto-fit, minmax(min(40rem, 100%), 1fr));
+    gap: 8rem;
+    padding: 0 8rem 0 8rem;
+}
+
+.content-test {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 0rem;
+    display: grid;
+}
+
+.project-image {
+    width: 100%;
+}
+
+#image {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* Footer CSS */
+
+footer {
+    padding-bottom: 0vh;
+    border-top-style: solid;
+    border-width: 0.3rem;
+    padding-top: 6rem;
+}
+
+footer h1 {
+    padding-bottom: 4.39rem;
+}
+
+.footer.row {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+}
+
+.footer-cta {
+    display: flex;
+    gap: 2vw;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.footer-cta a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Footer nav */
+
+.footer-nav {
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+}
+
+.footer-nav li {
+    display: inline-block;
+    padding: 2rem;
+}
+
+.footer-nav li a {
+    text-decoration: none;
+    color: inherit !important;
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+.footer-nav li .active {
+    text-decoration: underline;
+    transform: scale(1.3);
+}
+
+.footer-nav li a:hover {
+    transform: scale(1.3)
 }
 
 
