@@ -125,10 +125,6 @@ header {
 
 .nav {
     outline: 1px solid red;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    background: #1c7cbb;
     overflow: hidden;
     list-style-type: none;
     text-align: center;
@@ -137,7 +133,7 @@ header {
 }
 
 .nav li {
-    display: inline;
+    display: inline-block;
     padding: 2rem;
 }
 
