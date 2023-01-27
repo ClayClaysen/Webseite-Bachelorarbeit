@@ -10,18 +10,22 @@
     <script src="/script/render.js "></script>
     <script src="https://unpkg.com/mustache@latest "></script>
 
+    <!-- favicon -->
+    <link rel="icon" href="files/lgo1.png">
+
 </head>
 
 <body onload="renderHome()">
     <header id="top">
-        <div class="logo" id="logo" style="font-size: 2rem; font-weight: bold; position: absolute;">Simon klostermaier</div>
+        <div class="logo">
+            <a href="home.html">
+                <img src="/files/lgo2.png">
+            </a>
+        </div>
+
+        <!-- https://getbootstrap.com/docs/4.0/components/navbar/#how-it-works -->
 
         <nav class="navbar" id="navbar" role="navigation" aria-label="Main Menu">
-            <button class="burger-menu-toggle" id="burger-menu-toggle" aria-label="Open Menu" aria-expanded="false">
-                <span class="other-trigger-status screenreader-text closed">Open Menu</span>
-                <i class=”fa fa-bars” aria-hidden=”true”></i>
-                Menu
-             </button>
             <ul class="nav navbar-nav" id="menu">
                 <li class="nav-item" id="nav-item">
                     <a href="" class="nav-link active">
@@ -43,8 +47,12 @@
         </nav>
     </header>
 
-    <div class="showreel fluid-container">
-        <img src="/images/Aktivitätsmusik.png" id="showreel" />
+
+    <div class="showreel">
+        <video id="showreel_video" controls muted>
+            <source src="/files/callout_short.mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
 
     <!--template for latest project-->
@@ -66,29 +74,6 @@
 
     </script>
 
-    <!-- <script id="template-project" type="x-tmpl-mustache">
-
-        <div class="row">
-            <div class="col-sm-1"></div>
-            <div class="content col-sm-4 image">
-                <img src="{{image}}" id="image" />
-            </div>
-            <div class="col-sm-1 space"></div>
-            <div class="content col-sm-5 project-text">
-                <h2 class="projectname">{{project_name}}</h2>
-                <span>{{project_description}}</span>
-                <div class="buttons">
-                    <button type="button" class="btn btn-primary">Primary</button>
-                    <button type="button" class="btn btn-secondary">Secondary</button>
-                </div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-    </script> -->
-
-
-
     <!--target for latest project-->
     <div class="my-latest-project fluid-container">
         <h1> my latest project</h1>
@@ -101,39 +86,35 @@
     <!--template for about me-->
     <script id="template-about_me" type="x-tmpl-mustache">
 
-        <div class="row">
-            <div class="col-sm-1"></div>
-            <div class="content col-sm-4 image">
-                <img src="{{image}}" id="image" />
+        <div class="grid-test">
+            <div class="content content-test project-image">
+                <img src="files/lgo_big.png" id="image" />
             </div>
-            <div class="col-sm-1 space"></div>
-            <div class="content col-sm-5 project-text">
+            <div class="content content-test project-text">
                 <h2 class="about_me_name">{{name}}</h2>
                 <span>{{about_me_description}}</span>
                 <div class="buttons">
                     <button type="button" class="btn btn-primary">Primary</button>
                 </div>
             </div>
-            <div class="col-sm-1"></div>
         </div>
-
 
     </script>
 
     <!--target for latest project-->
-    <!-- <div class="about-me fluid-container">
+    <div class="about-me fluid-container">
         <h1>get to know me</h1>
         <div id="about_me-container">
             Loading...
         </div>
-    </div> -->
+    </div>
 
 
 
 </body>
 
 <footer class="footer fluid-container ">
-    <h1 class="footer-headline">Interested?</h1>
+    <!-- <h1 class="footer-headline">Interested?</h1>
     <div class="row">
         <div class="col-sm-1"></div>
         <div class="footer-text col-sm-6">
@@ -171,7 +152,7 @@
                 <a href="impressum.html" class="nav-link ">impressum</a>
             </li>
         </ul>
-    </nav>
+    </nav> -->
 
 
 

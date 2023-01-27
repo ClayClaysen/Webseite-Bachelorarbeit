@@ -1,28 +1,35 @@
 {
     "about_me": {
         "name": "Simon Klostermaier",
-        "image": "/images/Aktivitätsmusik.png",
+        "image": "/files/Aktivitätsmusik.png",
         "about_me_description": "Chuck, Chuck, its' your cousin. Your cousin Marvin Berry, you know that new sound you're lookin for, well listen to this. Then how am I supposed to ever meet anybody."
     },
 
     "projects": [{
-            "project_name": "Luke",
-            "image": "/images/Aktivitätsmusik.png",
+            "project_name": "Malik Harris - Rockstar",
+            "image": "files/rockstar_thmbnl.png",
             "project_description": "Chuck, Chuck, its' your cousin. Your cousin Marvin Berry, you know that new sound you're lookin for, well listen to this. Then how am I supposed to ever meet anybody.",
             "project_description_long": "swag",
             "target_id": "1"
         },
         {
-            "project_name": "Jaggl",
-            "image": "/images/Aktivitätsmusik.png",
+            "project_name": "Cupra",
+            "image": "files/cupra_thmbnl.png",
             "project_description": "Chuck, Chuck, its' your cousin. Your cousin Marvin Berry, you know that new sound you're lookin for, well listen to this. Then how am I supposed to ever meet anybody.",
             "project_description_long": "swag",
             "target_id": "2"
 
         },
         {
-            "project_name": "Malik Harris",
-            "image": "/images/Aktivitätsmusik.png",
+            "project_name": "ARTIST MISSING - Callout",
+            "image": "files/callout_thmbnl.png",
+            "project_description": "Chuck, Chuck, its' your cousin. Your cousin Marvin Berry, you know that new sound you're lookin for, well listen to this. Then how am I supposed to ever meet anybody.",
+            "project_description_long": "swag",
+            "target_id": "Test"
+        },
+        {
+            "project_name": "Timo Schar - TITLE MISSING",
+            "image": "files/timoschar_thmbnl.png",
             "project_description": "Chuck, Chuck, its' your cousin. Your cousin Marvin Berry, you know that new sound you're lookin for, well listen to this. Then how am I supposed to ever meet anybody.",
             "project_description_long": "swag",
             "target_id": "Test"
