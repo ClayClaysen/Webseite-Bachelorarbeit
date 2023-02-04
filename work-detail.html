@@ -13,32 +13,33 @@
 
 <body onload="renderDetailPage()">
     <header>
-        <div class="logo" id="logo" style="font-size: 2rem; font-weight: bold; position: absolute;">Simon klostermaier</div>
+        <nav class="navbar navbar-expand-lg" id="navbar" role="navigation" aria-label="Main Menu">
+            <a class="logo navbar-brand" href="home.html">
+                <img src="/files/lgo2.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
-        <nav class="navbar" id="navbar" role="navigation" aria-label="Main Menu">
-            <button class="burger-menu-toggle" id="burger-menu-toggle" aria-label="Open Menu" aria-expanded="false">
-                <span class="other-trigger-status screenreader-text closed">Open Menu</span>
-                <i class=”fa fa-bars” aria-hidden=”true”></i>
-                Menu
-             </button>
-            <ul class="nav navbar-nav" id="menu">
-                <li class="nav-item" id="nav-item">
-                    <a href="home.html" class="nav-link">
-                        <span class="screenreader-text"> (current section)</span> home
-                    </a>
-                </li>
-                <li class="nav-item" id="nav-item">
-                    <a href="work.html" class="nav-link active">
-                        work
-                    </a>
-                </li>
-                <li class="nav-item" id="nav-item">
-                    <a href="about-me.html" class="nav-link">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="mr-auto navbar-nav">
+                    <li class="nav-item" id="nav-item">
+                        <a href="home.html" class="nav-link">
+                             home
+                        </a>
+                    </li>
+                    <li class="nav-item" id="nav-item">
+                        <a href="" class="nav-link active">
+                            <span class="screenreader-text"> (current section)</span> work
+                        </a>
+                    </li>
+                    <li class="nav-item" id="nav-item">
+                        <a href="about-me.html" class="nav-link">
                         about me
                     </a>
-                </li>
-            </ul>
-
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
