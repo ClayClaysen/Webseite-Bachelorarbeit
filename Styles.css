@@ -13,7 +13,6 @@ div {
 
 html {
     font-size: 62.5%;
-    padding: 0;
 }
 
 
@@ -46,9 +45,12 @@ h2:not(.projectname):not(.about_me_name) {
 }
 
 
-/* media queries */
+/* media queries for colors*/
 
 @media (prefers-color-scheme: dark) {
+    nav {
+        background: black;
+    }
     body {
         color: white;
         background: black;
@@ -68,10 +70,17 @@ h2:not(.projectname):not(.about_me_name) {
         color: white;
         background: black;
         border: solid black;
+    }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        padding: 2rem;
     }
 }
 
 @media (prefers-color-scheme: light) {
+    nav {
+        background: white;
+    }
     body {
         color: black;
         background: white;
@@ -91,6 +100,10 @@ h2:not(.projectname):not(.about_me_name) {
         color: black;
         background: white;
         border: solid white;
+    }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        padding: 2rem;
     }
 }
 
@@ -120,42 +133,37 @@ header {
 /* Header Navigation CSS */
 
 .navbar {
-    outline: 1px solid red;
+    padding: 0px;
 }
 
-.nav {
-    outline: 1px solid red;
-    overflow: hidden;
+.navbar-nav {
     list-style-type: none;
     text-align: center;
-    position: relative;
-    margin: 1em auto;
+    margin: auto;
 }
 
-.nav li {
-    display: inline-block;
+.navbar-nav li {
     padding: 2rem;
 }
 
-.nav li a {
+.navbar-nav li a {
     text-decoration: none;
     color: inherit !important;
     font-size: 3.2rem;
     font-weight: bold;
 }
 
-.nav li .active {
+.navbar-nav li .active {
     text-decoration: underline;
     transform: scale(1.3);
 }
 
-.nav li a:hover {
+.navbar-nav li a:hover {
     transform: scale(1.3)
 }
 
 .logo {
-    position: absolute;
-    margin: 2rem;
+    margin: 1rem;
     height: 8rem;
     width: 8rem;
 }
@@ -192,7 +200,7 @@ header {
     padding-top: 6rem;
 }
 
-.grid-test {
+.grid {
     display: grid;
     align-content: start;
     grid-template-columns: repeat(auto-fit, minmax(min(40rem, 100%), 1fr));
@@ -200,7 +208,7 @@ header {
     padding: 0 8rem 0 8rem;
 }
 
-.content-test {
+.content {
     margin-top: auto;
     margin-bottom: auto;
     padding-left: 0rem;
