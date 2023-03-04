@@ -1,20 +1,20 @@
 {
     "about_me": {
         "name": "Simon Klostermaier",
-        "image": "klostermaier/files/Aktivitätsmusik.png",
+        "image": "/klostermaier/files/Aktivitätsmusik.png",
         "about_me_description": "Chuck, Chuck, its' your cousin. Your cousin Marvin Berry, you know that new sound you're lookin for, well listen to this. Then how am I supposed to ever meet anybody."
     },
 
     "projects": [{
             "project_name": "Malik Harris - Rockstar",
-            "image": "klostermaier/files/rockstar_thmbnl.png",
+            "image": "/klostermaier/files/rockstar_thmbnl.png",
             "project_description": "Chuck, Chuck, its' your cousin. Your cousin Marvin Berry, you know that new sound you're lookin for, well listen to this. Then how am I supposed to ever meet anybody.",
             "project_description_long": "swag",
             "target_id": "1"
         },
         {
             "project_name": "Cupra",
-            "image": "klostermaier/files/cupra_thmbnl.png",
+            "image": "/klostermaier/files/cupra_thmbnl.png",
             "project_description": "Chuck, Chuck, its' your cousin. Your cousin Marvin Berry, you know that new sound you're lookin for, well listen to this. Then how am I supposed to ever meet anybody.",
             "project_description_long": "swag",
             "target_id": "2"
@@ -22,21 +22,21 @@
         },
         {
             "project_name": "ARTIST MISSING - Callout",
-            "image": "klostermaier/files/callout_thmbnl.png",
+            "image": "/klostermaier/files/callout_thmbnl.png",
             "project_description": "Chuck, Chuck, its' your cousin. Your cousin Marvin Berry, you know that new sound you're lookin for, well listen to this. Then how am I supposed to ever meet anybody.",
             "project_description_long": "swag",
             "target_id": "Test"
         },
         {
             "project_name": "Timo Schar - TITLE MISSING",
-            "image": "klostermaier/files/timoschar_thmbnl.png",
+            "image": "/klostermaier/files/timoschar_thmbnl.png",
             "project_description": "Chuck, Chuck, its' your cousin. Your cousin Marvin Berry, you know that new sound you're lookin for, well listen to this. Then how am I supposed to ever meet anybody.",
             "project_description_long": "swag",
             "target_id": "Test"
         },
         {
             "project_name": "Timo Scharrrrrrrrrr - TITLE MISSING",
-            "image": "klostermaier/files/timoschar_thmbnl.png",
+            "image": "/klostermaier/files/timoschar_thmbnl.png",
             "project_description": "Chuck, Chuck, its' your cousin. Your cousin Marvin Berry, you know that new sound you're lookin for, well listen to this. Then how am I supposed to ever meet anybody.",
             "project_description_long": "swag",
             "target_id": "Test"
