@@ -4,7 +4,7 @@ var project_data_length;
 var button;
 
 
-fetch('/script/data.json')
+fetch('klostermaier/script/data.json')
     .then((response) => response.json())
     .then((json) => {
         // console.log(json)
