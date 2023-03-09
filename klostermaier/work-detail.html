@@ -9,6 +9,9 @@
     <!--script-->
     <script src="/klostermaier/script/render.js "></script>
     <script src="https://unpkg.com/mustache@latest "></script>
+
+    <!-- favicon -->
+    <link rel="icon" href="/klostermaier/files/lgo1.png">
 </head>
 
 <body onload="renderDetailPage()">
@@ -29,7 +32,7 @@
                         </a>
                     </li>
                     <li class="nav-item" id="nav-item">
-                        <a href="" class="nav-link active">
+                        <a href="work.html" class="nav-link active">
                             <span class="screenreader-text"> (current section)</span> work
                         </a>
                     </li>
@@ -43,32 +46,41 @@
         </nav>
     </header>
 
+    <div class="grid">
+        <a class="work-detail-back" href="work.html">
+            back
+        </a>
+    </div>
+
     <!--template for latest project-->
     <script id="template-project" type="x-tmpl-mustache">
 
-        <div class="row">
-            <div class="col-sm-1"></div>
-            <div class="content col-sm-4 image">
+        <div class="showreel">
+            <video id="showreel_video" controls muted>
+                <source src="{{video}}">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="grid fluid-container">
+            <div class="content project-image">
                 <img src="{{image}}" id="image" />
             </div>
-            <div class="col-sm-1 space"></div>
-            <div class="content col-sm-5 project-text">
+            <div class="content project-text">
                 <h2 class="projectname">{{project_name}}</h2>
                 <span>{{project_description}}</span>
                 <div class="buttons">
-                    <button type="button" class="btn btn-primary">Primary</button>
-                    <button type="button" class="btn btn-secondary">Secondary</button>
+                    <button type="button" onclick="document.location='./work-detail.html?project={{target_id}}'" class="btn btn-primary">about this project</button>
+
                 </div>
             </div>
-            <div class="col-sm-1"></div>
         </div>
 
     </script>
 
 
     <!--target for project detailpage-->
-    <div class=" my-latest-project fluid-container">
-        <h1> my latest project</h1>
+    <div class="">
         <div id="project-container">
             Loading...
         </div>

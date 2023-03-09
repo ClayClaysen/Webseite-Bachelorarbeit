@@ -10,6 +10,8 @@
     <script src="/klostermaier/script/render.js "></script>
     <script src="https://unpkg.com/mustache@latest "></script>
 
+    <!-- favicon -->
+    <link rel="icon" href="/klostermaier/files/lgo1.png">
 
 </head>
 
@@ -49,21 +51,17 @@
     <script id="template" type="x-tmpl-mustache">
 
         {{#.}}
-        <div class="fluid-container">
-            <div class="row">
-                <div class="col-sm-1"></div>
-                <div class="content col-sm-4 image">
-                    <img src="{{image}}" id="image" />
+        <div class="grid fluid-container">
+            <div class="content project-image">
+                <img src="{{image}}" id="image" />
+            </div>
+            <div class="content project-text">
+                <h2 class="projectname">{{project_name}}</h2>
+                <span>{{project_description}}</span>
+                <div class="buttons">
+                    <button type="button" onclick="document.location='./work-detail.html?project={{target_id}}'" class="btn btn-primary">about this project</button>
+
                 </div>
-                <div class="col-sm-1 space"></div>
-                <div class="content col-sm-5 project-text">
-                    <h2 class="projectname">{{project_name}}</h2>
-                    <span>{{project_description}}</span>
-                    <div class="buttons">
-                        <button type="button" onclick="document.location='./work-detail.html?project={{target_id}}'" class="btn btn-primary">Mehr zum Projekt</button>
-                    </div>
-                </div>
-                <div class="col-sm-1"></div>
             </div>
         </div>
         {{/.}}

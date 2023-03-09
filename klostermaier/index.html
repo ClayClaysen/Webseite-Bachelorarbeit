@@ -66,8 +66,8 @@
                 <h2 class="projectname">{{project_name}}</h2>
                 <span>{{project_description}}</span>
                 <div class="buttons">
-                    <button type="button" class="btn btn-primary">this project</button>
-                    <button type="button" class="btn btn-secondary">all projects</button>
+                    <button type="button" class="btn btn-primary" onclick="document.location='./work-detail.html?project={{target_id}}'">about this project</button>
+                    <button type="button" class="btn btn-secondary" onclick="document.location='work.html'">all projects</button>
                 </div>
             </div>
         </div>
@@ -94,7 +94,7 @@
                 <h2 class="about_me_name">{{name}}</h2>
                 <span>{{about_me_description}}</span>
                 <div class="buttons">
-                    <button type="button" class="btn btn-primary">more about me</button>
+                    <button type="button" class="btn btn-primary" onclick="document.location='about-me.html'">more about me</button>
                 </div>
             </div>
         </div>

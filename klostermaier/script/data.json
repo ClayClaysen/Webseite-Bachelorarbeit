@@ -10,36 +10,33 @@
             "image": "/klostermaier/files/rockstar_thmbnl.png",
             "project_description": "Chuck, Chuck, its' your cousin. Your cousin Marvin Berry, you know that new sound you're lookin for, well listen to this. Then how am I supposed to ever meet anybody.",
             "project_description_long": "swag",
-            "target_id": "1"
+            "target_id": "1",
+            "video": "/klostermaier/files/rockstar_short_1_1.mp4"
         },
         {
-            "project_name": "Cupra",
+            "project_name": "CUPRA ATECA",
             "image": "/klostermaier/files/cupra_thmbnl.png",
             "project_description": "Chuck, Chuck, its' your cousin. Your cousin Marvin Berry, you know that new sound you're lookin for, well listen to this. Then how am I supposed to ever meet anybody.",
             "project_description_long": "swag",
-            "target_id": "2"
+            "target_id": "2",
+            "video": "/klostermaier/files/Cupra_Short.mp4"
 
         },
         {
-            "project_name": "ARTIST MISSING - Callout",
+            "project_name": "COSBY - Callout",
             "image": "/klostermaier/files/callout_thmbnl.png",
             "project_description": "Chuck, Chuck, its' your cousin. Your cousin Marvin Berry, you know that new sound you're lookin for, well listen to this. Then how am I supposed to ever meet anybody.",
             "project_description_long": "swag",
-            "target_id": "Test"
+            "target_id": "Test",
+            "video": "/klostermaier/files/Cupra_Short.mp4"
         },
         {
-            "project_name": "Timo Schar - TITLE MISSING",
+            "project_name": "Timo Scharf - Young & Restless",
             "image": "/klostermaier/files/timoschar_thmbnl.png",
             "project_description": "Chuck, Chuck, its' your cousin. Your cousin Marvin Berry, you know that new sound you're lookin for, well listen to this. Then how am I supposed to ever meet anybody.",
             "project_description_long": "swag",
-            "target_id": "Test"
-        },
-        {
-            "project_name": "Timo Scharrrrrrrrrr - TITLE MISSING",
-            "image": "/klostermaier/files/timoschar_thmbnl.png",
-            "project_description": "Chuck, Chuck, its' your cousin. Your cousin Marvin Berry, you know that new sound you're lookin for, well listen to this. Then how am I supposed to ever meet anybody.",
-            "project_description_long": "swag",
-            "target_id": "Test"
+            "target_id": "Test",
+            "video": "/klostermaier/files/TimoScharf_short.mp4"
         }
 
     ]
