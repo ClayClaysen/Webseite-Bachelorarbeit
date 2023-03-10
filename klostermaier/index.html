@@ -16,7 +16,7 @@
 </head>
 
 <body onload="renderHome()">
-    <header>
+    <header role="banner">
         <nav class="navbar navbar-expand-lg" id="navbar" role="navigation" aria-label="Main Menu">
             <a class="logo navbar-brand" href="index.html">
                 <img src="/klostermaier/files/lgo2.png" alt="logo">
@@ -47,103 +47,123 @@
         </nav>
     </header>
 
-
-    <div class="showreel">
-        <video id="showreel_video" controls muted>
-            <source src="/klostermaier/files/callout_short.mp4">
+    <main role="main" id="main">
+        <div class="video-container">
+            <video id="fullscreen-video" controls muted>
+            <source src="/klostermaier/files/callout_short.mp4" alt="showreel">
             Your browser does not support the video tag.
         </video>
-    </div>
+        </div>
 
-    <!--template for latest project-->
-    <script id="template-project" type="x-tmpl-mustache">
+        <!--template for about me-->
+        <script id="template-about_me" type="x-tmpl-mustache">
 
-        <div class="grid">
-            <div class="content project-image">
-                <img src="{{image}}" id="image" />
-            </div>
-            <div class="content project-text">
-                <h2 class="projectname">{{project_name}}</h2>
-                <span>{{project_description}}</span>
-                <div class="buttons">
-                    <button type="button" class="btn btn-primary" onclick="document.location='./work-detail.html?project={{target_id}}'">about this project</button>
-                    <button type="button" class="btn btn-secondary" onclick="document.location='work.html'">all projects</button>
+            <div class="grid">
+                <div class="content project-image">
+                    <img src="/klostermaier/files/lgo_big.png" id="image" alt="about me thumbnail" />
+                </div>
+                <div class="content project-text">
+                    <h2 class="about_me_name">{{name}}</h2>
+                    <span>{{about_me_description}}</span>
+                    <div class="buttons">
+                        <button type="button" class="btn btn-primary" onclick="document.location='about-me.html'">more about me</button>
+                    </div>
                 </div>
             </div>
-        </div>
 
-    </script>
+        </script>
 
-    <!--target for latest project-->
-    <div class="my-latest-project fluid-container">
-        <h1> my latest project</h1>
-        <div id="projects-container">
-            Loading...
-        </div>
-    </div>
-
-
-    <!--template for about me-->
-    <script id="template-about_me" type="x-tmpl-mustache">
-
-        <div class="grid">
-            <div class="content project-image">
-                <img src="/klostermaier/files/lgo_big.png" id="image" />
+        <!--target for latest project-->
+        <div class="about-me fluid-container">
+            <h1>get to know me</h1>
+            <div id="about_me-container">
+                Loading...
             </div>
-            <div class="content project-text">
-                <h2 class="about_me_name">{{name}}</h2>
-                <span>{{about_me_description}}</span>
-                <div class="buttons">
-                    <button type="button" class="btn btn-primary" onclick="document.location='about-me.html'">more about me</button>
+        </div>
+
+        <!--template for latest project-->
+        <script id="template-project" type="x-tmpl-mustache">
+
+            <div class="grid">
+                <div class="content project-image">
+                    <img src="{{image}}" id="image" alt="project thumbnail" />
+                </div>
+                <div class="content project-text">
+                    <h2 class="projectname">{{project_name}}</h2>
+                    <span>{{project_description}}</span>
+                    <div class="buttons">
+                        <button type="button" class="btn btn-primary" onclick="document.location='./work-detail.html?project={{target_id}}'">about this project</button>
+                        <button type="button" class="btn btn-secondary" onclick="document.location='work.html'">all projects</button>
+                    </div>
                 </div>
             </div>
+
+        </script>
+
+        <!--target for latest project-->
+        <div class="my-latest-project fluid-container">
+            <h1> my latest project</h1>
+            <div id="projects-container">
+                Loading...
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer fluid-container" role="contentinfo">
+        <h1 class="footer-headline">Interested?</h1>
+        <div class="mail-cta">
+            <span>Send me an email to:</span>
+            <button type="button" class="btn btn-primary mail-cta-button">
+                        <a href=" mailto:simons@klostermaier.de?subject=let's talk">simon@klostermaier.de
+                        </a>
+                </button>
         </div>
 
-    </script>
+        <nav class="footer-nav navbar navbar-expand-lg" aria-label="Footer Menu" role="navigation">
+            <ul class="mr-auto navbar-nav">
+                <li class="nav-item" id="nav-item">
+                    <a href="#main" aria-current="page">
+                        home
+                    </a>
+                </li>
+                <li class="nav-item" id="nav-item">
+                    <a href="work.html">
+                        work
+                    </a>
+                </li>
+                <li class="nav-item" id="nav-item">
+                    <a href="about-me.html">
+                        about me
+                    </a>
+                </li>
+                <li class="nav-item" id="nav-item">
+                    <a href="sustainability.html">
+                        sustainability
+                    </a>
+                </li>
+                <li class="nav-item" id="nav-item">
+                    <a href="impressum.html">
+                        impressum
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
-    <!--target for latest project-->
-    <div class="about-me fluid-container">
-        <h1>get to know me</h1>
-        <div id="about_me-container">
-            Loading...
-        </div>
-    </div>
 
 
 
+        <!-- Bootstrap: Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct " crossorigin="anonymous "></script>
+
+        <!-- Bootstrap: Latest compiled and minified CSS -->
+        <link rel="stylesheet " href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css " integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N " crossorigin="anonymous ">
+
+
+        <!--stylesheet -->
+        <link rel="stylesheet " type="text/css " href="Styles.css ">
+
+    </footer>
 </body>
-
-<footer class="footer fluid-container ">
-    <h1 class="footer-headline">Interested?</h1>
-    <div class="grid">
-        <div class="content">
-            <span>send me an email or meesage me on my social mediaaasdnasmdna,smdn,asdna,msdnm,asnd,masnd,masnda am amsmndakkjasdasdaslkdaasdasdasdas</span>
-        </div>
-        <div class="buttons">
-            <button type="button" class="btn btn-primary">
-                <a href=" mailto:simons@mail.de?subject=Hello Schmello ">your.name@email.com
-                </a>
-            </button>
-            <div>
-                social media
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <!-- Bootstrap: Latest compiled JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-
-    <!-- Bootstrap: Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-
-
-    <!--stylesheet -->
-    <link rel="stylesheet " type="text/css " href="Styles.css ">
-
-</footer>
 
 </html>
