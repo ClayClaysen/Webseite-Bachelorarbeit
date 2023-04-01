@@ -27,15 +27,15 @@
             "image": "/klostermaier/files/callout_thmbnl.png",
             "project_description": "Chuck, Chuck, its' your cousin. Your cousin Marvin Berry, you know that new sound you're lookin for, well listen to this. Then how am I supposed to ever meet anybody.",
             "project_description_long": "swag",
-            "target_id": "Test",
-            "video": "/klostermaier/files/Cupra_Short.mp4"
+            "target_id": "3",
+            "video": "/klostermaier/files/calloutlive_short.mp4"
         },
         {
             "project_name": "Timo Scharf - Young & Restless",
             "image": "/klostermaier/files/timoschar_thmbnl.png",
             "project_description": "Chuck, Chuck, its' your cousin. Your cousin Marvin Berry, you know that new sound you're lookin for, well listen to this. Then how am I supposed to ever meet anybody.",
             "project_description_long": "swag",
-            "target_id": "Test",
+            "target_id": "4",
             "video": "/klostermaier/files/TimoScharf_short.mp4"
         }
 
